@@ -1,0 +1,18 @@
+###
+ # @Author: LinRenJie
+ # @Date: 2023-02-11 15:02:42
+ # @LastEditTime: 2023-02-11 15:05:26
+ # @Description: 
+ # @FilePath: /taro-nut4/.husky/pre-commit
+ # @Email: xoxosos666@gmail.com
+### 
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+# lint1
+# echo "---格式化检查开始---"
+# npm run lint
+# echo "---格式化检查结束---"
+# # 检查ts
+echo "---ts检查开始---"
+npx lint-staged
+echo "---ts检查结束---"
